@@ -1,0 +1,31 @@
+{
+  "name": "jb-mcp-bridge",
+  "version": "1.0.0",
+  "description": "stdio→SSE bridge for JetBrains MCP - enables Gemini CLI, Antigravity, and other MCP clients to use JetBrains IDE tools",
+  "main": "src/bridge.ts",
+  "bin": {
+    "jb-mcp-bridge": "./src/bridge.ts"
+  },
+  "scripts": {
+    "start": "tsx src/bridge.ts",
+    "test": "echo 'See README for testing instructions'"
+  },
+  "keywords": [
+    "jetbrains",
+    "mcp",
+    "model-context-protocol",
+    "gemini",
+    "antigravity",
+    "claude",
+    "sse",
+    "stdio"
+  ],
+  "author": "akapug",
+  "license": "MIT",
+  "dependencies": {
+    "tsx": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
